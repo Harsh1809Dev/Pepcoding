@@ -3,6 +3,6 @@ public class Client{
         Stack st = new Stack();
         for(int i = 0; i < 10 ; i++)
             st.push(i * 10 + 1);
-        st.push(111);
+        System.out.println(st);
     }
 }

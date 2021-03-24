@@ -38,6 +38,20 @@ public class Stack{
             throw new Exception("Stack Already Empty");
         }
     }
+
+    //to_string==========================================================
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < this.size; i++) {
+            sb.append(this.arr[i]);
+            if (i != this.size - 1)
+                sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
     //basic_functions====================================================
     protected void push_(int data){
         arr[++tos] = data;
